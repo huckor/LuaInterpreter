@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89BD688D1D22463700583DE5 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BD688C1D22463700583DE5 /* liblua.a */; };
+		89BD689A1D2246C200583DE5 /* Conv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BD688E1D2246C200583DE5 /* Conv.cpp */; };
+		89BD689B1D2246C200583DE5 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BD68911D2246C200583DE5 /* Log.cpp */; };
+		89BD689C1D2246C200583DE5 /* LuaInterpreter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BD68931D2246C200583DE5 /* LuaInterpreter.cpp */; };
+		89BD689D1D2246C200583DE5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BD68951D2246C200583DE5 /* main.cpp */; };
+		89BD689E1D2246C200583DE5 /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BD68961D2246C200583DE5 /* Path.cpp */; };
+		89BD689F1D2246C200583DE5 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89BD68981D2246C200583DE5 /* Time.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		899E5C691D2245280089B5F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		899E5C6B1D2245280089B5F3 /* LuaInterpreter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LuaInterpreter; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BD688C1D22463700583DE5 /* liblua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblua.a; path = ../../dep/lua/lib/osx64/liblua.a; sourceTree = "<group>"; };
+		89BD688E1D2246C200583DE5 /* Conv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Conv.cpp; path = ../../src/Conv.cpp; sourceTree = "<group>"; };
+		89BD688F1D2246C200583DE5 /* Conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Conv.h; path = ../../src/Conv.h; sourceTree = "<group>"; };
+		89BD68901D2246C200583DE5 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Global.h; path = ../../src/Global.h; sourceTree = "<group>"; };
+		89BD68911D2246C200583DE5 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = ../../src/Log.cpp; sourceTree = "<group>"; };
+		89BD68921D2246C200583DE5 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log.h; path = ../../src/Log.h; sourceTree = "<group>"; };
+		89BD68931D2246C200583DE5 /* LuaInterpreter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LuaInterpreter.cpp; path = ../../src/LuaInterpreter.cpp; sourceTree = "<group>"; };
+		89BD68941D2246C200583DE5 /* LuaInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaInterpreter.h; path = ../../src/LuaInterpreter.h; sourceTree = "<group>"; };
+		89BD68951D2246C200583DE5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main.cpp; sourceTree = "<group>"; };
+		89BD68961D2246C200583DE5 /* Path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Path.cpp; path = ../../src/Path.cpp; sourceTree = "<group>"; };
+		89BD68971D2246C200583DE5 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Path.h; path = ../../src/Path.h; sourceTree = "<group>"; };
+		89BD68981D2246C200583DE5 /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time.cpp; path = ../../src/Time.cpp; sourceTree = "<group>"; };
+		89BD68991D2246C200583DE5 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Time.h; path = ../../src/Time.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		899E5C681D2245280089B5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD688D1D22463700583DE5 /* liblua.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		899E5C621D2245280089B5F3 = {
+			isa = PBXGroup;
+			children = (
+				89BD688E1D2246C200583DE5 /* Conv.cpp */,
+				89BD688F1D2246C200583DE5 /* Conv.h */,
+				89BD68901D2246C200583DE5 /* Global.h */,
+				89BD68911D2246C200583DE5 /* Log.cpp */,
+				89BD68921D2246C200583DE5 /* Log.h */,
+				89BD68931D2246C200583DE5 /* LuaInterpreter.cpp */,
+				89BD68941D2246C200583DE5 /* LuaInterpreter.h */,
+				89BD68951D2246C200583DE5 /* main.cpp */,
+				89BD68961D2246C200583DE5 /* Path.cpp */,
+				89BD68971D2246C200583DE5 /* Path.h */,
+				89BD68981D2246C200583DE5 /* Time.cpp */,
+				89BD68991D2246C200583DE5 /* Time.h */,
+				89BD688C1D22463700583DE5 /* liblua.a */,
+				899E5C6C1D2245280089B5F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		899E5C6C1D2245280089B5F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				899E5C6B1D2245280089B5F3 /* LuaInterpreter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		899E5C6A1D2245280089B5F3 /* LuaInterpreter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899E5C721D2245280089B5F3 /* Build configuration list for PBXNativeTarget "LuaInterpreter" */;
+			buildPhases = (
+				899E5C671D2245280089B5F3 /* Sources */,
+				899E5C681D2245280089B5F3 /* Frameworks */,
+				899E5C691D2245280089B5F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuaInterpreter;
+			productName = LuaInterpreter;
+			productReference = 899E5C6B1D2245280089B5F3 /* LuaInterpreter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		899E5C631D2245280089B5F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Robert Hucko";
+				TargetAttributes = {
+					899E5C6A1D2245280089B5F3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 899E5C661D2245280089B5F3 /* Build configuration list for PBXProject "LuaInterpreter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 899E5C621D2245280089B5F3;
+			productRefGroup = 899E5C6C1D2245280089B5F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				899E5C6A1D2245280089B5F3 /* LuaInterpreter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		899E5C671D2245280089B5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89BD689F1D2246C200583DE5 /* Time.cpp in Sources */,
+				89BD689C1D2246C200583DE5 /* LuaInterpreter.cpp in Sources */,
+				89BD689B1D2246C200583DE5 /* Log.cpp in Sources */,
+				89BD689D1D2246C200583DE5 /* main.cpp in Sources */,
+				89BD689A1D2246C200583DE5 /* Conv.cpp in Sources */,
+				89BD689E1D2246C200583DE5 /* Path.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		899E5C701D2245280089B5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		899E5C711D2245280089B5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		899E5C731D2245280089B5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = ../../dep/lua/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = ../../dep/lua/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = ../../dep/lua/lib/osx64;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		899E5C741D2245280089B5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = ../../dep/lua/include;
+				"HEADER_SEARCH_PATHS[arch=*]" = ../../dep/lua/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = ../../dep/lua/lib/osx64;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		899E5C661D2245280089B5F3 /* Build configuration list for PBXProject "LuaInterpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899E5C701D2245280089B5F3 /* Debug */,
+				899E5C711D2245280089B5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899E5C721D2245280089B5F3 /* Build configuration list for PBXNativeTarget "LuaInterpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899E5C731D2245280089B5F3 /* Debug */,
+				899E5C741D2245280089B5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 899E5C631D2245280089B5F3 /* Project object */;
+}
