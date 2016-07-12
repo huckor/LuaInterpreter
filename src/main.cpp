@@ -4,6 +4,11 @@
 #include "Path.h"
 
 Log *__LOG;
+#ifdef __APPLE__
+std::string LuaPath = "/Volumes/WORK/projects/Demos/LuaInterpreter/lua/";
+#else
+std::string LuaPath = Path::GetPathToExecutableFolder() + "../../../lua/";
+#endif
 
 int main(int argc, const char * argv[])
 {
@@ -11,15 +16,10 @@ int main(int argc, const char * argv[])
     __LOG = new Log();
     __LOG->Create("stderr");
     
-    
+
     //Create LUA interpreter
     LuaInterpreter *_Interpreter = new LuaInterpreter();
-    
-#ifdef WIN32
-	int Ret = _Interpreter->Start(Path::GetPathToExecutableFolder() + "../../../lua/test.lua", Path::GetPathToExecutableFolder() + "../../../lua/", "main");
-#elif __APPLE__
-    int Ret = _Interpreter->Start("/Volumes/WORK/projects/LuaInterpreter/lua/test.lua", "/Volumes/WORK/projects/LuaInterpreter/lua/", "main");
-#endif
+    int Ret = _Interpreter->Start(LuaPath + "test.lua", LuaPath, "main");
     
     //After we finished with LUA, delete interpreter class
     delete _Interpreter;
